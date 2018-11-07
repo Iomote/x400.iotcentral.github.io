@@ -1,0 +1,39 @@
+# ----
+# Site
+
+title: Iomote
+description: Iomote X400 IotCentral documentation.
+url: https://iomote.com
+google_analytics_key:
+permalink: pretty
+
+collections:
+  iotcentral:
+    title: IoT Central
+    position: 1
+  gettingstarted:
+    title: Getting Started
+    position: 2
+  gateway:
+    title: X400 Gateway
+    position: 3
+  arduino:
+    title: Iomote Library
+    position: 4
+  
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - readme.md
+  - LICENCE
+  - Notepad.md
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+
