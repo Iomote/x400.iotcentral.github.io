@@ -9,7 +9,7 @@ Before starting you have to execute some steps to get your system ready to work 
 - Install the **Arduino IDE** on your computer (you can download it form [arduino website](https://www.arduino.cc), available for Windows - Linux - Mac).
 
 
-> **WARNING**: (for Windows users) download the installer from arduino website, not the app from the Windows store (we had problem with that version of the IDE).
+> **WARNING**: (for Windows users) download the installer from arduino website, not the app from the Windows store (we had some problems with that version of the IDE).
 {: .error}
 
 - Once the Arduino IDE is installed you have to add the **X400 libraries**:

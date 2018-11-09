@@ -24,24 +24,26 @@ The method initializes the hardware and communicates the Application name and ve
 > **WARNING**: the **Iomote.begin** method is mandatory for the app to work properly. NEVER remove it from your code!
 {: .error}
 
-The **App name and App version** running on a specific device are shown on *MyMote - Devices section*.
+The **App name and App version** running on a specific device are shown on *Device Template Properties section*.
 
 
 ---
 
 
-### Reading the Device Key
+### Setup IoT Central Device Connection parameters
 ~~~ cpp
-int8_t Iomote.devKey(char* buffer)
+int8_t Iomote.iotCentralInfo(char* ScopeId, char* DeviceId, char* PrimaryKey)
 ~~~
 **Parameters**
-- **buffer**: the char buffer where the device key will be stored.
+- **ScopeId**: the char array containing the Scope Id string.
+- **DeviceId**: the char array containing the Device Id string.
+- **PrimaryKey**: the char array containing the Primary Key string.
 
 **Returns**
 - 0 in case of success
 - error code (refer to error codes table)
  
-With this method it’s possible to read the **Device Key**. The key is long 64 chars and it’s returned as terminated array char, so the buffer must be **at least 65 chars**.
+Using this method the user configurea the device with all the parameters needed for the connection with IoT Central. Once set, such parameters are stored on device internal memory. It is enought to set such parameters at least one time on each **X400** device.
 
 
 ---
