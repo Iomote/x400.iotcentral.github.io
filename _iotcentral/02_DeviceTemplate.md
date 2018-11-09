@@ -6,18 +6,18 @@ position: 2
 To define the device type, behaviour and properties, IoT Central uses the *device templates*. All the **X400** devices have some common template properties, but the user can customize any other aspect of the template based on the specific application needs.
 
 The **Device Template** has the following properties:
-* **Measurements**: specify the telemetry the device sends to the application.
-* **Settings**: specify the configurations that an operator can set.
-* **Properties**: specify metadata that an operator can set.
-* **Commands**: specify tasks to be triggered to the device.
+* **Measurements**: the telemetries, states and events the device sends to the application.
+* **Settings**: the configurations that an operator can set on the device.
+* **Properties**: metadata that an operator can define, or the device can update.
+* **Commands**: definition of tasks to be triggered on the device.
 * **Rules**: automate behavior in the application based on data sent from a device.
-* **Dashboards**: are customizable views of a device in the application.
+* **Dashboards**: customizable views of a device in the application.
 
 ---
 
 ### **Measurements**
 **Measurements** are all the telemetry data sent by the user application to the IoT Central cloud service.
-Measurements are totally configurable by user, and are dependant from app-processor running code. Later in the documentation there will be shown some examples.
+Measurements are totally configurable by the user, and are dependant from app-processor running code. Later in the documentation there will be shown some examples.
 
 ---
 
