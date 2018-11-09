@@ -1,5 +1,6 @@
 ---
 title: Ethernet configuration
+description: how to change LAN parameters for ethernet connectivity
 position: 7
 ---
 
