@@ -18,10 +18,7 @@ void Iomote.begin(const char *appname, uint8_t vers0, uint8_t vers1, uint8_t ver
 
 The method initializes the hardware and communicates the Application name and version to the **Iomote Core** processor. Those parameters are sent to the Cloud only when changed, keep in mind each device has a max number of messages available per day.
 
-> **NOTE**: in order to avoid confusion we suggest to keep the same name for your Apps on MyMote dashboard
-{: .warning}
-
-> **WARNING**: the **Iomote.begin** method is mandatory for the app to work properly. NEVER remove it from your code!
+> **WARNING**: the **Iomote.begin** method is mandatory for the app to work properly. **NEVER remove it from your code!**
 {: .error}
 
 The **App name and App version** running on a specific device are shown on *Device Template Properties section*.
@@ -43,7 +40,7 @@ int8_t Iomote.iotCentralInfo(char* ScopeId, char* DeviceId, char* PrimaryKey)
 - 0 in case of success
 - error code (refer to error codes table)
  
-Using this method the user configurea the device with all the parameters needed for the connection with IoT Central. Once set, such parameters are stored on device internal memory. It is enought to set such parameters at least one time on each **X400** device.
+Using this method the user configures the device with all the parameters needed by the IoT Central connection. Once set, such parameters are stored on device internal memory. It is enought to set IoT Central Connection parameters once on each **X400** device.
 
 
 ---

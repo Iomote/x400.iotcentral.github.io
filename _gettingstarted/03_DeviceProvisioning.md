@@ -13,7 +13,9 @@ At startup X400 does not have any connection information. Any info about IoT Cen
 Once the info are received, **X400** connects automatically to the cloud, waiting to be paired with a specific account.
 
 
+
 **How to get the Device Connection Info?**
+
 The device connection info are available on the device explorer section of IoT Central. Simply select the desired device template and open the desired device (if no real device are available, please create a new one).
 To access all the info needed by device, you have to click on the **Connect** button on the device page.
 The info needed by the device are:
@@ -21,6 +23,8 @@ The info needed by the device are:
 - **Device ID**
 - **Primary Key** of *Shared Access Signature (SAS)* section
 
+> **NOTE**:
+>
 > Take note of those parameters since them should be added on the app-processor Arduino firmware.
 {: .info}
 

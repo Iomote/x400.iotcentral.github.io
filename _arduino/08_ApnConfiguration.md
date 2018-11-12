@@ -4,7 +4,7 @@ description: hot to customize APN parameters for mobile network connection
 position: 8
 ---
 
-To configure APN parameters on **Iomote Core** non-volatile memory the user have to set them via **Application processor's code**. Since such parameters are stored on non-volatile memory, it is enought to insert the setup command atleast once on **App processor's code** on device lifetime. If user should change APN configuration, he can always change them using a new arduino firmware.
+To configure APN parameters on **Iomote Core** non-volatile memory the user have to set them via **Application processor's code**. Since such parameters are stored on non-volatile memory, it is enought to insert the setup command one time on **App processor's code** on device lifetime. If user should change APN configuration, he can always change them using a new arduino firmware.
 
 ---
 
