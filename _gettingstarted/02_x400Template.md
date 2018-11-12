@@ -44,7 +44,37 @@ Following is a list of device properties sent by **Iomote Core** processor, usef
 
 Here are the available commands the user can configure to perform some already defined tasks on **Iomote Core OS**. Such commands are defined on the device OS and the user applicaton MUST NOT rely on the same names for **App-processor's code**.
 
-- **Commands** following is a list of device commands present on **Iomote Core** processor OS, usefull to perform some mantainance tasks. You can setup them using the *Edit Template* button on the **Commands** tab of template view
-    - **OS Update** TODO: add the OS Update command description
-    - **App Update** TODO: add the App Update command description
-    - **User Messages** TODO: add the User message method description (all the other names are available, right?)
+> **Reserved Commands** following is a list of device commands present on **Iomote Core** processor OS, usefull to perform some mantainance tasks. You can setup them using the *Edit Template* button on the **Commands** tab of template view
+> {: .info}
+  
+- **OS Update** 
+    - **Field Name**: FIRMWAREINSTALL
+    - **Input Fields**:
+        - **File URL**
+            - **Field Name**: url
+            - **Data Type**: text
+            - **Value**: https://*os_file_path*
+        - **MD5 check**
+            - **Field Name**: md5
+            - **Data Type**: text
+            - **Value**: *os_file_md5_string* 
+
+- **App Update** 
+    - **Field Name**: APPINSTALL
+    - **Input Fields**:
+        - **File URL**
+            - **Field Name**: url
+            - **Data Type**: text
+            - **Value**: https://*your_app_bin_file_path*
+        - **MD5 check**
+            - **Field Name**: md5
+            - **Data Type**: text
+            - **Value**: *your_app_bin_file_md5_string* 
+
+> **User Commands** *App-processor's code* can receive cloud commands content, using the following command implementation.
+> {: .info}
+
+- **User Messages**
+    - **Field Name**: USERMESSAGE
+    - **Input Fields**: User can add all the fields needed by its **App-processor** application. The result will be a Json converted string with all the parameters added.
+
